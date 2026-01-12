@@ -38,10 +38,9 @@ Proje, `src/main/java` altında 4 ana katmana ayrılmıştır:
 
 ---
 
-## 🛠️ Kurulum ve Çalıştırma
-1. Projeyi bilgisayarınıza indirin.
-2. **IntelliJ IDEA** ile `pom.xml` dosyasını seçerek açın.
-3. Maven bağımlılıklarının yüklenmesi için **"Reload All Maven Projects"** butonuna tıklayın.
-4. `src/main/java/app/Main.java` dosyasını çalıştırın.
+## 📋 Kurulum ve Çalıştırma Talimatı
 
-> **Hocaya Not:** Proje çalıştırıldığında `library.db` dosyası otomatik olarak taranır. Eğer kütüphaneler yüklenmezse lütfen Maven panelinden `clean` ve `install` komutlarını çalıştırınız.
+1.  **Arşivi Hazırlayın:** Size iletilen `.rar` veya `.zip` dosyasını sağ tıklayarak bir klasöre çıkartın.
+2.  **Otomatik Yapılandırma:** Proje açıldığında Maven kütüphanelerinin (Hibernate, SQLite vb.) yüklenmesi için sağ alttaki yükleme çubuğunun bitmesini bekleyin. 
+
+---
