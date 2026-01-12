@@ -51,7 +51,16 @@ Proje geliştirilirken kullanılan modern teknoloji yığını aşağıdadır:
 ## 📂 Proje Yapısı (Katmanlı Mimari)
 Proje, temiz kod (Clean Code) prensiplerine uygun olarak şu hiyerarşide yapılandırılmıştır:
 
+## 📋 Kurulum ve Çalıştırma Talimatı
+
+1.  **Arşivi Hazırlayın:** Size iletilen `.rar` veya `.zip` dosyasını sağ tıklayarak bir klasöre çıkartın.
+2.  **Otomatik Yapılandırma:** Proje açıldığında Maven kütüphanelerinin (Hibernate, SQLite vb.) yüklenmesi için sağ alttaki yükleme çubuğunun bitmesini bekleyin.
+3. 🚨🚨🚨 **Klasörler Turuncu Görünüyorsa: Proje ana dizinindeki src klasörüne sağ tıklayıp Mark Directory as > Sources Root seçeneğini işaretleyiniz. Bu işlem tüm alt dizinleri (entity, dao, app) anında aktif hale getirecek ve projeyi çalışmaya hazır kılacaktır. 🛠️  🚨🚨🚨
+
+---
+
 ```
+
 SmartLibraryPlus/
 ├── src/
 │   ├── app/     Main.Java
@@ -63,9 +72,3 @@ SmartLibraryPlus/
 ├── library.db
 └── pom.xml         # Proje bağımlılıkları ve kütüphane tanımlamaları
 
-## 📋 Kurulum ve Çalıştırma Talimatı
-
-1.  **Arşivi Hazırlayın:** Size iletilen `.rar` veya `.zip` dosyasını sağ tıklayarak bir klasöre çıkartın.
-2.  **Otomatik Yapılandırma:** Proje açıldığında Maven kütüphanelerinin (Hibernate, SQLite vb.) yüklenmesi için sağ alttaki yükleme çubuğunun bitmesini bekleyin. 
-
----
