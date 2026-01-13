@@ -8,17 +8,25 @@ import java.util.List;
 
 public class LoanDao {
     public void save(Loan loan) {
-        Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = null;
+        Session session = null;
         try {
+            session = HibernateUtil.getSessionFactory().openSession();
             transaction = session.beginTransaction();
+
             session.save(loan);
+
             transaction.commit();
         } catch (Exception e) {
-            if (transaction != null) transaction.rollback();
-            e.printStackTrace();
+            if (transaction != null) {
+                transaction.rollback();
+            }
+
+            throw new RuntimeException(e);
         } finally {
-            session.close();
+            if (session != null) {
+                session.close();
+            }
         }
     }
     public void update(Loan loan) { //
