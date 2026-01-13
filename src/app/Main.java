@@ -123,7 +123,7 @@ public class Main {
         if (book != null && student != null) {
             if (book.getStatus() == Book.Status.AVAILABLE) {
 
-                // --- SADECE BURAYA TRY-CATCH EKLEDİK, GERİSİ AYNI ---
+               
                 try {
                     Loan loan = new Loan(student, book);
                     loanDao.save(loan);
@@ -137,6 +137,7 @@ public class Main {
                     System.out.println("⚠️  UYARI: OneToOne Kısıtlaması Devreye Girdi!");
                     System.out.println("Bu kitap daha önce bir ödünç işlemine girmiş.");
                     System.out.println("bir kez ödünç kaydına sahip olabilir.");
+                    System.out.println("Bu yüzden kayıt işlemi yapılmadı.");
                     System.out.println("************************************************");
                 }
                 // ----------------------------------------------------
